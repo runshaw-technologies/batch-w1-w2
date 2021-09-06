@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">The Time is: </button>
+
+
+    <!-- Change HTML Attribute Value -->
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+    <!-- Change HTML Styles (CSS) -->
+    <p id="demo">This paragraph data will be changed.</p>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='50px'">Click to change</button>
+
+    <!-- Hide HTML with JS -->
+    <p id="demo" style="display: none;">This paragraph data will be hidden on click of the button.</p>
+    <button type="button" onclick="document.getElementById('demo').style.display='block'">Click to change</button>
+
+    <p id="demo"></p>
+    <script>
+        document.getElementById('demo').innerHTML = "New Javascript File";
+    </script>
+
+
+    <!-- Connect External JavaScript file -->
+    <script src="style.js"></script>
+
+    <p id="demo"></p>
+
+    <script>
+        alert('Welcome!!!');
+        prompt('Enter your name');
+
+        var a;
+        var b;
+        var c;
+
+        a = 10;
+        b = 20;
+        c = 30;
+
+        let y = 10;
+        const z = 10;
+
+        var a = 10, b = 20; 
+        var sum;
+
+        var c = parseInt(prompt('Enter the value of c:'));
+        // alert(typeof(c));
+        sum = a + b + c;
+        alert(sum);
+
+
+        Functions
+        function myFunction(p1, p2) {
+            return p1 * p2;
+        }
+        document.getElementById('demo').innerHTML = myFunction(5, 10);
+
+
+        Syntax of JS Functions
+        function name(parameter1, parameter2, parameter3) {
+            // code to be executed
+        }
+
+
+        Object (key: value)
+        let student = {
+            name: "student1",
+            email: "student1@example.in"
+        }
+        alert(student.name);
+        alert(student.email);
+
+        let student = {
+            student1 = {
+                name: "User1",
+                email: "user@test.com"
+            },
+            student2 = {
+                name: "User2",
+                email: "new@user.com"
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
