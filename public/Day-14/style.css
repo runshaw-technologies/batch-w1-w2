@@ -1,0 +1,20 @@
+* {
+    /* Values goes from 0 to 255 */
+    /* Hex Values - from #000 - #fff = rrggbb*/
+    background-color: rgb(232, 223, 222);
+    opacity: 1.0;
+}
+
+
+/* this is grouping selectors */
+h1, h2, p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-style: dashed;
+
+    /* TRBL */
+    margin: 0 10% 20% 30px;
+    padding: 10%;
+}
+
+/* BOX MODEL */
