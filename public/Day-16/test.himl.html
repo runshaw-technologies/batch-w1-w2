@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - Exercise 1</title>
+</head>
+<body>
+    
+<h1 class="counter-display">(..)</h1>
+<button class="counter-minus">-</button>
+<button class="counter-plus">+</button>
+
+
+<!-- in JS: -->
+<script>
+let counterDisplayElem = document.querySelector('.counter-display');
+let counterMinusElem = document.querySelector('.counter-minus');
+let counterPlusElem = document.querySelector('.counter-plus');
+
+let count = 0;
+
+updateDisplay();
+
+counterPlusElem.addEventListener("click",()=>{
+    count++;
+    updateDisplay();
+}) ;
+
+counterMinusElem.addEventListener("click",()=>{
+    count--;
+    updateDisplay();
+});
+
+function updateDisplay(){
+    counterDisplayElem.innerHTML = count;
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="newFun()">Click</button>
+    <script>
+        // 1. JS can change HTML content
+        document.getElementById("demo").innerHTML = "Hello JS";
+
+        // 2. JS can change HTML attribute value
+        document.getElementById("demo").src = "pic.png";
+
+        // 3. Change HTML Styles
+        document.getElementById("demo").style.fontSize = "30px";
+
+        // 4. Hide HTML Elements
+        document.getElementById("demo").style.display = "none";
+
+        // 5. Show hidden HTML Element
+        document.getElementById("demo").style.display = "block";
+
+        // // Variables
+        var a = 10;
+        let a = 20;
+        const a = 30;
+
+        // // Functions
+        function newFunction() {}
+
+        // // Examples
+        function newFun() {
+            document.getElementById("demo").innerHTML = "Hello JS";
+        }
+
+        // Display possible outputs from JS
+        Writing in an HTML element - innerHTML
+        HTML output - document.write()
+        alert box - alert()
+        browser console - console.log()
+
+        // Data Types - 8 Data Types
+        1. Numbers - 10, 20
+        2. bigint 
+        3. string - "";
+        4. boolean - true, false;
+        5. null
+        6. undefined
+        7. object
+        8. symbol
+
+        alert(Boolean(1));
+        alert(Boolean(0));
+
+        alert(Boolean("hello"));
+        alert(Boolean(" "));
+        alert(Boolean(""));
+
+
+        // Comparison
+        alert(2 > 1);
+        alert(2 == 1);
+        alert(null === undefined);
+
+        5 > 4
+        "apple" > "pineapple"
+        "2" > "12"
+        undefined == null
+        undefined === null
+        null == "\n0\n"
+        null === +"\n0\n"
+
+        
+
+    </script>
+</body>
+</html>
