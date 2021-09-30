@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <!-- <script>
+        // What’s wrong with the code style below?
+
+        function pow(x,n)  // <- no space between arguments
+        {  // <- figure bracket on a separate line
+        let result=1;   // <- no spaces before or after =
+        for(let i=0;i<n;i++) {result*=x;} // <- no spaces
+        // the contents of { ... } should be on a new line
+        return result;
+        }
+
+        let x=prompt("x?",''), n=prompt("n?",'')  // <-- technically possible,
+        // but better make it 2 lines, also there's no spaces and missing ;
+        if (n<=0)   // <- no spaces inside (n <= 0), and should be extra line above it
+        {
+        alert(`Power ${n} is not supported, please enter an integer number greater than zero`);
+        }
+        else // <- could write it on a single line like "} else {"
+        {
+        alert(pow(x,n))
+        }
+    </script> -->
+
+    <script>
+        let map = new Map();
+
+        // map.set(key, value);
+        map.set('1', 'str');
+        map.set(1, 'num1');
+
+        // get the values
+        // map.get(key)
+        // alert(map.get(1));
+        alert(map.get('1'));
+
+    </script>
+</body>
+</html>
